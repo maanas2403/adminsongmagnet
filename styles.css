@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Spotify'; /* Choose a name for your font */
+  src: url('./GothamBold.ttf') format('truetype'); /* Specify the font file path and format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Spotify', Arial, sans-serif;
+  background-image: url('./bg4.png');
+  background-size: cover; 
+  background-repeat: repeat;
+  background-attachment: fixed; 
+}
+header {
+  z-index:1;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container {
+  margin-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.search-container {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 200px;
+  padding: 10px;
+}
+#result-head{
+  display: inline-block;
+  color: #fff;
+  background-color: black;
+}
+.result-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+#OriginalSong{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.song-details {
+  color: #fff;
+  
+}
+#songDetails{
+  background-color: rgba(0, 0, 0, 0.85);
+  max-width: 320px;
+  margin: 0 auto; /* Horizontally center the element */
+  border:1px dotted rgb(202, 220, 220);
+  border-radius: 20px;
+  padding: 10px;
+}
+#songDetails:hover{
+  transform:translateY(-10px);
+ box-shadow: 0 0 10px red, /* Top shadow */
+  0 0 10px red, /* Right shadow */
+  0 0 10px red, /* Bottom shadow */
+  0 0 10px red; /* Left shadow */
+}
+
+#similarSongs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Set gap between containers */
+
+}
+#songDetails a {
+  color: white;
+  text-decoration: none;
+}
+#songDetails a:hover{
+  color: red;
+  text-decoration: none;
+}
+.results {
+  margin: 10px 10px 10px 10px;
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  /*max-width: calc(40% - 20px); /* 1/3rd of the page width with margin accounted for */
+  /*flex: 0 0 calc(40% - 20px); /* Fixing the width of each item */
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  border:1px dotted rgb(202, 220, 220);
+  border-radius: 20px;
+}
+.results a {
+  color: white;
+  text-decoration: none;
+}
+.results a:hover{
+  color: red;
+  text-decoration: none;
+}
+.results:hover{
+  transform:translateY(-10px);
+ box-shadow: 0 0 10px red, /* Top shadow */
+  0 0 10px red, /* Right shadow */
+  0 0 10px red, /* Bottom shadow */
+  0 0 10px red; /* Left shadow */
+}
+
