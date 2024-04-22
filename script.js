@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const CLIENT_ID = '78dd5f4cae814709af30c74c31113c9c';
   const CLIENT_SECRET = '906c03f0a2f84a9d879eace46f342ceb';
-  const REDIRECT_URI = 'http://127.0.0.1:3000/index.html'; // Replace 'http://localhost:3000/callback' with your redirect URI
+  const REDIRECT_URI = 'https://adminsongmagnet.vercel.app/'; // Replace 'http://localhost:3000/callback' with your redirect URI
   const SCOPE = 'playlist-modify-private playlist-modify-public'
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   let currentlyPlayingAudio = null;
